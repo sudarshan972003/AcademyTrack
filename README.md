@@ -18,7 +18,7 @@ This project consist of a simple client-server architecture where:
   - Update existing student records.
   - Delete student records.
 - **Location and Weather Information**: Displays the current location and temperature for the logged-in user.
-- **Custom API**: Displays a Motivational Quote fetched from a custom API built using REST Framework.
+- **Motivational Quote**: Displays a Motivational Quote fetched from a custom API built using REST Framework.
 
 ### Installation for this project :
 ```
