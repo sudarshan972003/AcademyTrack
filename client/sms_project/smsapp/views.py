@@ -40,7 +40,7 @@ def home(request):
     if request.user.is_authenticated:
         try:
             # Fetch quotes from the API
-            quotes_response = requests.get ('http://127.0.0.1:8000/')    # Deploy the Server i.e. Custom API --> ('https://starc00009.pythonanywhere.com/')
+            quotes_response = requests.get('http://127.0.0.1:8000/')    # Deploy the Server i.e. Custom API --> ('https://starc00009.pythonanywhere.com/')
             if quotes_response.status_code == 200:
                 quotes = quotes_response.json()
                 # Get a random quote from the list
