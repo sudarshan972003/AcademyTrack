@@ -47,6 +47,7 @@ pip install djangorestframework
    The server will be running at http://127.0.0.1:8000/.
    
 
+
 **Running the Client**:
     
     cd sms_project
