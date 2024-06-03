@@ -1,4 +1,4 @@
-# AcademyTrack: Student Management & API Integration ( REST Framework and External APIs )
+# AcademyTrack: Student Management & API Integration  ( REST Framework and External APIs )
 
 AcademyTrack is a web application designed to empower class incharges for seamless student management. It provides features for adding, updating, deleting, and viewing student records, along with a user-friendly interface for navigation. It also displays location and weather information for logged-in users and a random motivational quote fetched from a custom API built using REST Framework.
 
