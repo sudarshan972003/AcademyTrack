@@ -1,4 +1,4 @@
-# AcademyTrack-with-REST-Framework ( Student Management System with REST Framework )
+# AcademyTrack: Student Management & API Integration
 
 AcademyTrack is a web application designed to empower class incharges for seamless student management. It provides features for adding, updating, deleting, and viewing student records, along with a user-friendly interface for navigation. It also displays location and weather information for logged-in users and a random motivational quote fetched from a custom API built using REST Framework.
 
