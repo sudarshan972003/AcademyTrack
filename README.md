@@ -1,12 +1,6 @@
 # AcademyTrack: Student Management & API Integration ( REST Framework and External APIs )
 
-AcademyTrack is a web application designed to empower class incharges for seamless student management. It provides features for adding, updating, deleting, and viewing student records, along with a user-friendly interface for navigation. It also displays location and weather information for logged-in users and a random motivational quote fetched from a custom API built using REST Framework.
-
-## Description
-
-This project consist of a simple client-server architecture where:
-- The server hosts a custom API built using REST Framework that returns a motivativational quote.
-- The AcademyTrack ( Student Management System ) which is the client displays a random motivativational quote in its Home Page by making a request to the server's API.
+AcademyTrack is a web application ( built using Django ) designed to empower class incharges for seamless student management. It provides features for adding, updating, deleting, and viewing student records, along with a user-friendly interface for navigation. It also displays location and weather information for logged-in users and a random motivational quote fetched from a custom API built using REST Framework.
 
 ## Features
 
@@ -20,6 +14,12 @@ This project consist of a simple client-server architecture where:
 - **Location and Weather Information**: Displays the current location and temperature for the logged-in user.
 - **Motivational Quote**: Displays a Motivational Quote fetched from a custom API built using REST Framework.
 
+## Description
+
+This project consist of a simple client and server where:
+- The server hosts a custom API built using REST Framework that returns a motivativational quote.
+- The AcademyTrack ( Student Management System ) which is the client displays a random motivativational quote in its Home Page by making a request to the server's API.
+
 ### Installation for this project :
 ```
 pip install django
@@ -29,7 +29,7 @@ pip install djangorestframework
 
 ## How to Run
 
-**Running the Server**:
+**Running the Server i.e. Custom API built using REST Framework**:
     
     cd mm_project
 
@@ -54,7 +54,7 @@ pip install djangorestframework
    
 
 
-**Running the Client**:
+**Running the Client i.e. AcademyTrack ( Student Mangement System )**:
     
     cd sms_project
     
