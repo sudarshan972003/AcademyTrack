@@ -1,0 +1,85 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Student</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}"/>
+</head>
+<body>
+<center>
+    <div class="container">
+    <h1>Add Student</h1>
+    <form method="post" onsubmit="return validateForm()">
+        {% csrf_token %}
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" pattern="[A-Za-z]{2,}" title="Name should contain only alphabets and have minimum 2 characters" required><br><br>
+        <label for="roll_number">Roll Number:</label><br>
+        <input type="number" id="roll_number" name="roll_number" min="0" required><br><br>
+        <label for="mobile">Mobile Number:</label><br>
+        <input type="number" id="mobile" name="mobile" min="1000000000" max="9999999999" required><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="marks1">Marks 1:</label><br>
+        <input type="number" id="marks1" name="marks1" min="0" max="100" required><br><br>
+        <label for="marks2">Marks 2:</label><br>
+        <input type="number" id="marks2" name="marks2" min="0" max="100" required><br><br>
+        <label for="marks3">Marks 3:</label><br>
+        <input type="number" id="marks3" name="marks3" min="0" max="100" required><br><br>
+        <label for="marks4">Marks 4:</label><br>
+        <input type="number" id="marks4" name="marks4" min="0" max="100" required><br><br>
+        <label for="marks5">Marks 5:</label><br>
+        <input type="number" id="marks5" name="marks5" min="0" max="100" required><br><br>
+        <button type="submit">Save</button>
+    </form>
+    <h2 id="error_message">{{ error_message }}</h2>
+    <br>
+    <a href="{% url 'home' %}">Back to Home</a>
+
+    <script>
+        function validateForm() {
+            var name = document.getElementById("name").value;
+            var roll_number = document.getElementById("roll_number").value;
+            var mobile = document.getElementById("mobile").value;
+            var email = document.getElementById("email").value;
+            var marks1 = document.getElementById("marks1").value;
+            var marks2 = document.getElementById("marks2").value;
+            var marks3 = document.getElementById("marks3").value;
+            var marks4 = document.getElementById("marks4").value;
+            var marks5 = document.getElementById("marks5").value;
+
+            if (!/^[A-Za-z]{2,}$/.test(name)) {
+                alert("Name should contain only alphabets and have minimum 2 characters");
+                return false;
+            }
+
+            if (roll_number < 0) {
+                alert("Roll number cannot be negative");
+                return false;
+            }
+
+            if (mobile.length !== 10) {
+                alert("Mobile number must be 10 digits");
+                return false;
+            }
+
+            if (email === "") {
+                alert("Email cannot be empty");
+                return false;
+            }
+
+            if (marks1 < 0 || marks1 > 100 || marks2 < 0 || marks2 > 100 || marks3 < 0 || marks3 > 100 || marks4 < 0 || marks4 > 100 || marks5 < 0 || marks5 > 100) {
+                alert("Marks should be between 0 and 100");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+    </div>
+</center>
+</body>
+</html>
+
