@@ -49,7 +49,7 @@ pip install djangorestframework
 
 **Running the Client**:
     
-    cd cfc_project
+    cd sms_project
     
 1) Create a Superuser:
     ```
