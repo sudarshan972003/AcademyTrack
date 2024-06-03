@@ -100,11 +100,11 @@ pip install djangorestframework
 - styles.css: Contains the styles for the project.
 
 ## Usage
--Upon accessing the application, users will be directed to the login page.
--New users can sign up for an account.
--After logging in, users will be directed to the home page, where they can view weather information, location details, and a random motivational quote fetched from the custom API built using REST Framework.
--Users can navigate to different sections of the application using the provided buttons.
--In the student management section, users can add, view, update, and delete student records.
+- Upon accessing the application, users will be directed to the login page.
+- New users can sign up for an account.
+- After logging in, users will be directed to the home page, where they can view weather information, location details, and a random motivational quote fetched from the custom API built using REST Framework.
+- Users can navigate to different sections of the application using the provided buttons.
+- In the student management section, users can add, view, update, and delete student records.
 
 ## Dependencies
 
