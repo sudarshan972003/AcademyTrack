@@ -2,6 +2,12 @@
 
 AcademyTrack is a web application designed to empower class incharges for seamless student management. It provides features for adding, updating, deleting, and viewing student records, along with a user-friendly interface for navigation. It also displays location and weather information for logged-in users and a random motivational quote fetched from a custom API built using REST Framework.
 
+## Description
+
+This project consist of a simple client-server architecture where:
+- The server hosts an API that returns a motivativational quote.
+- The AcademyTrack(Student Management System) which is a client displays a random motivativational quote in its Home Page by making a request to the server's API.
+
 ## Features
 
 - **User Authentication**: Users can log in and log out.
